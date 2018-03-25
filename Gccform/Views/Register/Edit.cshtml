@@ -1,0 +1,32 @@
+﻿@model Gccform.ViewModels.EditView
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "_Layout";
+}
+
+<h2>Person Edit</h2>
+
+<hr />
+
+        <form asp-action="Edit" >
+            <input type="hidden" asp-for="@Model.Persons.ID" />
+            <h3>GCC New Comer Form</h3>
+
+            @Html.Partial("_PersonName",@Model.PersonNames)
+            @Html.Partial("_Person", @Model.Persons)
+
+            @Html.Partial("_Contact",@Model.Contacts)
+            @Html.Partial("_Address",@Model.Addresses)
+            @Html.Partial("_Church",@Model.Churches)
+
+
+            <fieldset>
+                <button type="submit" id="contact-submit" >Save</button>
+            </fieldset>
+
+        </form>
+   
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>

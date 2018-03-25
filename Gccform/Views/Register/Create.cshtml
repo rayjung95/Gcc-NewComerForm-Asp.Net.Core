@@ -1,0 +1,176 @@
+﻿@addTagHelper "*, Microsoft.AspNetCore.Mvc.TagHelpers"
+@model Gccform.Models.Person
+
+
+@{
+    Layout = "_Layout";
+}
+
+<form asp-action="Create" asp-controller="Register" >
+
+  <h3>GCC New Comer Form</h3>
+    @Html.Partial("_PersonName")
+  <!--<div class="form-row">
+    <div class="form-group col-md-3">
+        <input type="text" asp-for="k_fname" maxlength="100" placeholder="Korean First Name" >
+    </div>
+
+    <div class="form-group col-md-3">
+        <input asp-for="k_lname" placeholder="Korean Last Name" type="text"   >
+    </div>
+
+    <div class="form-group col-md-3">
+        <input asp-for="e_fname" placeholder="English First Name" type="text"   >
+    </div>
+
+    <div class="form-group col-md-3">
+        <input asp-for="e_lname" placeholder="English Last Name" type="text"   >
+    </div>
+  </div>-->
+
+  <div class="form-row">
+    <div class="form-group col-md-6">
+        <input asp-for="email" placeholder="E-mail address" type="email"    >
+    </div>
+    
+    <div class="form-group col-md-3">
+        <input asp-for="dob" type="text" id="datepicker" placeholder="Date Of Birth">
+    </div>
+
+    <!--<div class="form-group col-md-3">
+      <div class="custom-control custom-radio custom-control-inline">
+          <input type="radio" id="Male" name="gender" class="custom-control-input">
+          <label class="custom-control-label" for="Male">Male</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input type="radio" id="Femal" name="gender" class="custom-control-input">
+          <label class="custom-control-label" for="Femal">Femal</label>
+        </div>
+    </div>-->
+  </div>
+
+  <div class="form-row">
+    <div class="form-group col-md-6">
+        <input asp-for="job" placeholder="Job Title" type="text"  >
+    </div>
+
+    <div class="form-group col-md-6">
+        <input asp-for="company_name" placeholder="Company Name" type="text" >
+    </div>
+  </div>
+
+    @Html.Partial("_Contact")
+    @Html.Partial("_Address")
+  <!--<hr/>
+  <h4>Contact</h4>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <fieldset>
+        <input asp-for="phone_num" placeholder="Phone Number" type="text"  >
+      </fieldset>
+    </div>
+    <div class="form-group col-md-6">
+      <fieldset>
+        <input asp-for="home_num" placeholder="Home Number" type="text"  >
+      </fieldset>
+    </div>
+  </div>
+-->
+<!--  <hr/>
+  <h4>Address</h4>
+  <div class="form-row">
+      <div class="form-group col-md-6">
+        <fieldset>
+          <input asp-for="street1" placeholder="Street1" type="text"  >
+        </fieldset>
+      </div>
+      <div class="form-group col-md-6">
+        <fieldset>
+          <input asp-for="street2" placeholder="Street2" type="text"  >
+        </fieldset>
+      </div>
+  </div>
+  <div class="form-row">
+      <div class="form-group col-md-6">
+        <fieldset>
+          <input asp-for="city" placeholder="City" type="text" >
+        </fieldset>
+      </div>
+      <div class="form-group col-md-6">
+        <fieldset>
+          <input asp-for="postal_code" placeholder="Postal Code" type="text"  >
+        </fieldset>
+      </div>
+  </div>-->
+
+    @Html.Partial("_Church")
+<!--
+  <hr/>
+  <h3>Church Info</h3>
+  <div class="form-row">
+    <div class="form-group col-md-3">
+      <fieldset>
+        <input asp-for="infant_baptized_church" type="text" class="form-control" placeholder="Infant Baptized Church">
+      </fieldset>
+    </div>
+    <div class="form-group col-md-3">
+      <fieldset>
+        <input asp-for="infant_baptized_date" id="b1" type="text" class="form-control" placeholder="Infant Baptized Date">
+      </fieldset>
+    </div>
+    <div class="form-group col-md-3">
+      <fieldset>
+        <input asp-for="baptized_church" type="text" class="form-control" placeholder="Baptized Church">
+      </fieldset>
+    </div>
+    <div class="form-group col-md-3">
+      <fieldset>
+        <input asp-for="baptized_date" id="b2" type="text" class="form-control" placeholder="Baptized Date">
+      </fieldset>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-4">
+      <fieldset>
+        <input asp-for="vehicle_license" type="text" class="form-control" placeholder="Vehicle License">
+      </fieldset>
+    </div>
+    <div class="form-group col-md-4">
+      <fieldset>
+        <input asp-for="person_status" type="text" class="form-control" placeholder="Person Status">
+      </fieldset>
+    </div>
+    <div class="form-group col-md-4">
+      <fieldset>
+        <input asp-for="position_type" type="text" class="form-control" placeholder="Position Type">
+      </fieldset>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-3">
+      <fieldset>
+        <input asp-for="last_church_name" type="text" class="form-control" placeholder="Last Church Name">
+      </fieldset>
+    </div>
+    <div class="form-group col-md-3">
+      <fieldset>
+        <input asp-for="last_church_leader" type="text" class="form-control" placeholder="Last Church Leader">
+      </fieldset>
+    </div>
+    <div class="form-group col-md-3">
+      <fieldset>
+        <input asp-for="friends_in_church" type="text" class="form-control" placeholder="Friends In Church">
+      </fieldset>
+    </div>
+    <div class="form-group col-md-3">
+      <fieldset>
+        <input asp-for="volunteer_experience" type="text" class="form-control" placeholder="Volunteer Experience">
+      </fieldset>
+    </div>
+  </div>
+-->
+  <fieldset>
+    <button type="submit" id="contact-submit" >Submit</button>
+  </fieldset>
+
+</form>

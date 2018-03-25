@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Home - GCC New Comer Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" id="ample-style-css" href="~/css/style.css" type="text/css" media="all">
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+    <body class="wide">
+        <div id="page" class="hfeed site">
+            <header>
+                <div class="header">
+                    <div class="main-head-wrap inner-wrap clearfix">
+                        <div id="header-logo-image">
+                            <a href="/">
+                                <img src="~/images/logo.png" alt="Wisdom Pet Medicine">
+                            </a>
+                        </div>
+                        <div id="header-text" class="">
+                            <h1 id="site-title">
+                                <a href="/" title="Wisdom Pet Medicine" rel="home">GCC New Comer Form</a>
+                            </h1>
+                            <p>We treat you like we treat our own.</p>
+                        </div>
+                    </div>
+                    
+                    <nav class="main-navigation">
+                        <ul class="menu">
+                            <li class="menu-item-has-children">
+                                <a href="/">Home</a>
+                            </li>
+                            <li >
+                                <a>Person</a>
+                            </li>
+                            <li>
+                                <a href="/register">Register</a>
+                            </li>
+
+                        </ul>
+                    </nav>
+                    @if (IsSectionDefined("image"))
+                      {
+                        @RenderSection("image", false)
+                      }
+                </div>
+            </header>
+            
+            <div class="main-wrapper">
+                <div class="single-page clearfix">
+                    <div class="inner-wrap">
+                        <div>
+                        @RenderBody()
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer id="colophon">
+                <div class="inner-wrap">
+                    Wisdom Pet Medicine is a fictitious brand created by Lynda.com, solely for the purpose of training. All products and people associated with Wisdom Pet Medicine are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Please see your veterinarian for all matters related to your pet's health.
+                </div>
+            </footer>
+        </div>
+        <script src="~/js/main.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    </body>
+</html>
+
+
+
+

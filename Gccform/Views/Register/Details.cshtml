@@ -1,0 +1,60 @@
+﻿@{
+    ViewData["Title"] = "Details";
+
+}
+
+<h2>Person Details</h2>
+    <hr />
+
+<div>
+    <div class="petname">
+    <h4>Person</h4>
+    <p>
+        <b>Korean Name:</b> @ViewBag.PersonName.k_lname @ViewBag.PersonName.k_fname
+    </p>
+    <p>
+        <b>English Name:</b> @ViewBag.PersonName.e_fname @ViewBag.PersonName.e_lname 
+    </p>
+    <p>
+        <b>Date Of Birth:</b> @ViewBag.Person.dob
+    </p>
+    <p class="hidden">
+        <b>Email:</b> @ViewBag.Person.email
+    </p>
+    <p class="hidden">
+        <b>Job Title:</b> @ViewBag.Person.job
+    </p>
+    <p class="hidden">
+        <b>Company Name:</b> @ViewBag.Person.company_name
+    </p>
+    <hr />
+    </div>
+    <h4>Address</h4>
+    <p>
+        <b>Street1:</b> @ViewBag.Address.street1
+    </p>
+    <p>
+        <b>Street2:</b> @ViewBag.Address.street2
+    </p>
+    <p>
+        <b>City:</b> @ViewBag.Address.city
+    </p>
+    <p>
+        <b>Postal Code:</b> @ViewBag.Address.postal_code
+    </p>
+    <hr />
+    
+    <h4>Contact</h4>
+    <p>
+        <b>Phone Number:</b> @ViewBag.Contact.phone_num
+    </p>
+    <p>
+        <b>Home Number:</b> @ViewBag.Contact.home_num
+    </p>
+    
+   
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@ViewBag.Person.ID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

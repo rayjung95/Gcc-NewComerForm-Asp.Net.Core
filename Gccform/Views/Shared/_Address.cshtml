@@ -1,0 +1,29 @@
+﻿@addTagHelper "*, Microsoft.AspNetCore.Mvc.TagHelpers"
+@model Gccform.Models.Address
+
+<hr/>
+  <h4>Address</h4>
+  <div class="form-row">
+      <div class="form-group col-md-6">
+        <fieldset>
+          <input asp-for="street1" placeholder="Street1" type="text"  >
+        </fieldset>
+      </div>
+      <div class="form-group col-md-6">
+        <fieldset>
+          <input asp-for="street2" placeholder="Street2" type="text"  >
+        </fieldset>
+      </div>
+  </div>
+  <div class="form-row">
+      <div class="form-group col-md-6">
+        <fieldset>
+          <input asp-for="city" placeholder="City" type="text" >
+        </fieldset>
+      </div>
+      <div class="form-group col-md-6">
+        <fieldset>
+          <input asp-for="postal_code" placeholder="Postal Code" type="text"  >
+        </fieldset>
+      </div>
+  </div>

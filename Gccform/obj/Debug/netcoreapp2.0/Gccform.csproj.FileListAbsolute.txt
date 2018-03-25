@@ -1,0 +1,11 @@
+/Users/Ray_Jung/Desktop/GCC-Project/asp.net/Gccform/Gccform/bin/Debug/netcoreapp2.0/Gccform.deps.json
+/Users/Ray_Jung/Desktop/GCC-Project/asp.net/Gccform/Gccform/bin/Debug/netcoreapp2.0/Gccform.runtimeconfig.json
+/Users/Ray_Jung/Desktop/GCC-Project/asp.net/Gccform/Gccform/bin/Debug/netcoreapp2.0/Gccform.runtimeconfig.dev.json
+/Users/Ray_Jung/Desktop/GCC-Project/asp.net/Gccform/Gccform/bin/Debug/netcoreapp2.0/Gccform.dll
+/Users/Ray_Jung/Desktop/GCC-Project/asp.net/Gccform/Gccform/bin/Debug/netcoreapp2.0/Gccform.pdb
+/Users/Ray_Jung/Desktop/GCC-Project/asp.net/Gccform/Gccform/obj/Debug/netcoreapp2.0/Gccform.csprojResolveAssemblyReference.cache
+/Users/Ray_Jung/Desktop/GCC-Project/asp.net/Gccform/Gccform/obj/Debug/netcoreapp2.0/Gccform.csproj.CoreCompileInputs.cache
+/Users/Ray_Jung/Desktop/GCC-Project/asp.net/Gccform/Gccform/obj/Debug/netcoreapp2.0/Gccform.AssemblyInfoInputs.cache
+/Users/Ray_Jung/Desktop/GCC-Project/asp.net/Gccform/Gccform/obj/Debug/netcoreapp2.0/Gccform.AssemblyInfo.cs
+/Users/Ray_Jung/Desktop/GCC-Project/asp.net/Gccform/Gccform/obj/Debug/netcoreapp2.0/Gccform.dll
+/Users/Ray_Jung/Desktop/GCC-Project/asp.net/Gccform/Gccform/obj/Debug/netcoreapp2.0/Gccform.pdb

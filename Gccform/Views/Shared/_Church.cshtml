@@ -1,0 +1,67 @@
+﻿@addTagHelper "*, Microsoft.AspNetCore.Mvc.TagHelpers"
+@model Gccform.Models.Church
+
+
+<hr/>
+  <h3>Church Info</h3>
+  <div class="form-row">
+    <div class="form-group col-md-3">
+      <fieldset>
+        <input asp-for="infant_baptized_church" type="text" placeholder="Infant Baptized Church">
+      </fieldset>
+    </div>
+    <div class="form-group col-md-3">
+      <fieldset>
+        <input asp-for="infant_baptized_date" id="b1" type="text" placeholder="Infant Baptized Date">
+      </fieldset>
+    </div>
+    <div class="form-group col-md-3">
+      <fieldset>
+        <input asp-for="baptized_church" type="text" placeholder="Baptized Church">
+      </fieldset>
+    </div>
+    <div class="form-group col-md-3">
+      <fieldset>
+        <input asp-for="baptized_date" id="b2" type="text" placeholder="Baptized Date">
+      </fieldset>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-4">
+      <fieldset>
+        <input asp-for="vehicle_license" type="text" placeholder="Vehicle License">
+      </fieldset>
+    </div>
+    <div class="form-group col-md-4">
+      <fieldset>
+        <input asp-for="person_status" type="text" placeholder="Person Status">
+      </fieldset>
+    </div>
+    <div class="form-group col-md-4">
+      <fieldset>
+        <input asp-for="position_type" type="text" placeholder="Position Type">
+      </fieldset>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-3">
+      <fieldset>
+        <input asp-for="last_church_name" type="text" placeholder="Last Church Name">
+      </fieldset>
+    </div>
+    <div class="form-group col-md-3">
+      <fieldset>
+        <input asp-for="last_church_leader" type="text" placeholder="Last Church Leader">
+      </fieldset>
+    </div>
+    <div class="form-group col-md-3">
+      <fieldset>
+        <input asp-for="friends_in_church" type="text" placeholder="Friends In Church">
+      </fieldset>
+    </div>
+    <div class="form-group col-md-3">
+      <fieldset>
+        <input asp-for="volunteer_experience" type="text" placeholder="Volunteer Experience">
+      </fieldset>
+    </div>
+  </div>
